@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee List</title>
+    <link rel="stylesheet" href="/lib/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand mx-3" href="#">Helpdesk Exercises</a>
+        <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mx-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="/jsExercises/home.html">Home</a> <!-- Link to employee.html -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/jsExercises/employee.html">Employee Info</a> <!-- Link to employee.html -->
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/jsExercises/employeelist.html">Employee List</a> <!-- Link to employeelist.html -->
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="employeeaddupdate.html">Add/Update</a> <!-- Employee page -->
+                </li>   
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Employee List Section -->
+    <div class="justify-content-center align-items-center row mt-5 ml-1">
+        <div class="col-12 text-center p-3"><h2>Current Employees</h2></div>
+        <div class="list-group col-10" id="employeeList" style="height:45vh;"></div>
+    </div>
+
+    <!-- Modal for Update -->
+    <div class="modal fade" id="employeeModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="theModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="theModalLabel">Update Employee Information</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <!-- Modal Fields -->
+                        <div class="row">
+                            <div class="col-4">Title:</div>
+                            <div class="col-8"><input type="text" placeholder="Enter title" id="TextBoxTitle" class="form-control" /></div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-4">First Name:</div>
+                            <div class="col-8"><input type="text" placeholder="Enter first name" id="TextBoxFirstName" class="form-control" /></div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-4">Last Name:</div>
+                            <div class="col-8"><input type="text" placeholder="Enter last name" id="TextBoxSurname" class="form-control" /></div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-4">Email:</div>
+                            <div class="col-8"><input type="email" placeholder="Enter email" id="TextBoxEmail" class="form-control" /></div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-4">Phone Number:</div>
+                            <div class="col-8"><input type="text" placeholder="Enter phone number" id="TextBoxPhone" class="form-control" /></div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <input type="button" value="Update" id="actionbutton" class="m-3" />
+                        <div id="modalstatus" class="text-left mt-3 mb-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="/lib/js/jquery.min.js"></script>
+    <script src="/lib/js/bootstrap.min.js"></script>
+    <script src="/js/employeelist.js"></script>
+</body>
+</html>

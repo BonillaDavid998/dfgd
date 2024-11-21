@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Helpdesk</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f8ff; 
+        }
+
+        .navbar {
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bootstrap Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/lib/img/helpdesk.png" alt="Helpdesk Logo" class="logo"> <!-- Updated logo path -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a> <!-- Home page -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="employee.html">Employees</a> <!-- Employee page -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="employeelist.html">Employee list</a> <!-- Employee page -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="employeeaddupdate.html">Add/Update</a> <!-- Employee page -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="CRUD.html">CRUD</a> <!-- Employee page -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Welcome to the Helpdesk Application</h1>
+        <p>Manage your helpdesk operations efficiently and effectively.</p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
